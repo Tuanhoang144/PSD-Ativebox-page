@@ -1,0 +1,165 @@
+@media screen and (max-width:1200px) {
+    .header-texts h1 {
+        font-size: 25px;
+    }
+    .header-texts {
+        padding: 50px 0;
+    }
+    .container .add-text h4 {
+        font-size: 18px;
+    }
+
+    .container .add-text p {
+        font-size: 11px;
+    }
+}
+
+@media screen  and (max-width:1025px){
+    
+    .main-header {
+        height: 50vh;
+    }
+    .nav .nav-link a{
+        margin: 0 7px;
+        font-size: 9px;
+        font-weight: bold;
+    }
+    .nav img {
+        width: 100px;
+    }
+
+    .nav {
+        height: 50px;
+    }
+
+    .header-texts h1{
+        width: 100%;
+    }
+
+    .header-texts p {
+        width: 100%;
+    }
+
+    .services {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .gallry {
+        grid-template-columns: repeat(3,1fr);
+    }
+    .team {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .nav .nav-menu {
+        display: none;
+    }
+    
+    .menu-buttons {
+        display: block;
+    } 
+    .nav .nav-menu {
+        display: block;
+        position: fixed;
+        text-align: center;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: white;
+        width: 300px;
+        z-index: 99;
+        border-left: 1px solid gray;
+        flex-direction: column;
+        gap: 10px 0;
+        padding-top: 60px;
+        align-items: stretch;
+        transform: translateX(100%);
+        will-change: transform;
+        transition: all 0.2s linear;
+    }
+    .nav .nav-menu .close-menu {
+        font-size: 30px;
+        display: block;
+        padding: 20px;
+        color: black;
+    }
+    .nav .nav-menu.is-show {
+        transform: translateX(0);
+    }
+    .menu-link {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        color: black !important;
+      }
+    .menu-link:hover {
+        background-color: black;
+        color: white !important;
+    }
+    .close-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        line-height: 50px;
+        cursor: pointer;
+        outline: none;
+        transition: .5s;
+        color: white;
+        z-index: 1000;
+    }
+}
+
+@media screen  and (max-width:768px){
+    .main-header {
+        height: 70vh;
+    }
+    .menu-buttons {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 50px;
+        cursor: pointer;
+        outline: none;
+        font-size: 20px;
+        transition: .5s;
+        color: white;
+    }
+    /* .close-menu {
+        display: none;
+    } */
+    .menu-buttons:hover {
+        color: #e84545;
+        text-align: center;
+    }
+    
+    
+
+    .services {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .gallry {
+        grid-template-columns: repeat(1,1fr);
+        padding: 0 1.5%;
+    }
+    .team {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .advertising {
+        grid-template-columns: 100%;
+    }
+    .footer {
+
+    }
+    .footer-texts {
+        grid-template-columns: 100%;
+        padding: 20px;
+    }
+    .f-text {
+        margin: 50px 0;
+    }
+
+    .header-layer {
+        padding: 0 10%;
+    }
+}
